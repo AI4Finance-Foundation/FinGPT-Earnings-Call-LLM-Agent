@@ -19,4 +19,4 @@ streamlit run Database.py
 
 DEMO
 
-![Demo][https://github.com/Athe-kunal/Earnings-Call-LLM-Agent/blob/main/demo.py]
+![Demo][https://github.com/Athe-kunal/Earnings-Call-LLM-Agent/blob/main/demo.png]
