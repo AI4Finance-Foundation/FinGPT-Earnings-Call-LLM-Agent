@@ -1,0 +1,8 @@
+#qdrant
+qdrant-client
+
+#encoder
+sentence-transformer
+
+#streamlit
+streamlit
