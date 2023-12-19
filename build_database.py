@@ -131,8 +131,13 @@ def query_database(question:str,qdrant_client,encoder,speakers_list):
         if curr_speaker not in relevant_docs_speaker_list:
             relevant_docs_speaker_list.append(rd['speaker'])
     
-    relevant_speaker_text = {k:"" for k in relevant_docs_speaker_list}
+    relevant_speaker_dict = {k:"" for k in relevant_docs_speaker_list}
     for rd in relevant_docs:
-        relevant_speaker_text[rd['speaker']]+=rd['speaker_text']
+        relevant_speaker_dict[rd['speaker']]+=rd['speaker_text']
 
+    relevant_speaker_text = ""
+    for speaker,text in relevant_speaker_dict.items():
+        relevant_speaker_text+=speaker+": "
+        relevant_speaker_text+=text + "\n\n"
+        
     return relevant_speaker_text
