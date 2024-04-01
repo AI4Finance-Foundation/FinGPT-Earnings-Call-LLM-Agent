@@ -1,6 +1,6 @@
 ## EARNINGS CALL LLM PROJECT USING QDRANT AND LANGCHAIN
 
-This project aims to build a LLM Agent for Question-Answering on Earnings call Data for publicly listed companies. Install the dependencies from `requirements.txt`
+This project aims to build a Financial LLM Agent for Question-Answering on Earnings call Data for publicly listed companies. Install the dependencies from `requirements.txt`
 
 
 To start the Qdrant docker container, install docker and run the following command
